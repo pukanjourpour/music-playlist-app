@@ -5,22 +5,21 @@ classDiagram
     Song "1..*" --o "0..*" Playlist
 
     class User{
-        +idUser
-        +login
+        +id_user
+        +username
         +password
-        +name
     }
 
     class Playlist{
-        +idPlaylist
-        +idUser
+        +id_playlist
+        +id_user
         +title
         +description
     }
 
     class Song{
-        +idSong
-        +idPlaylist
+        +id_song
+        +id_playlist
         +path
         +title
         +author
